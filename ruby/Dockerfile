@@ -18,6 +18,6 @@ RUN git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ru
 RUN ls -ld "$(rbenv root)"/plugins/ruby-build
 RUN echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
 RUN source ~/.bashrc
-RUN rbenv install 3.1.1 -v
-RUN rbenv global 3.1.1
+RUN rbenv install 3.0.3 -v
+RUN rbenv global 3.0.3
 RUN gem install bundler
